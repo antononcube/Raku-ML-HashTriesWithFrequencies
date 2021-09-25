@@ -25,44 +25,12 @@ use ML::HashTriesWithFrequencies;
 my $tr = TrieCreateBySplit( <bar bark bars balm cert cell> );
 TrieForm($tr);
 ```
-```
-# TRIEROOT => 6
-# ├─b => 4
-# │ └─a => 4
-# │   ├─l => 1
-# │   │ └─m => 1
-# │   └─r => 3
-# │     ├─k => 1
-# │     └─s => 1
-# └─c => 2
-#   └─e => 2
-#     ├─l => 1
-#     │ └─l => 1
-#     └─r => 1
-#       └─t => 1
-```
 
 Here we convert the trie with frequencies above into a trie with probabilities:
 
 ```perl6
 my $ptr = TrieNodeProbabilities( $tr );
 TrieForm($ptr);
-```
-```
-# TRIEROOT => 1
-# ├─b => 0.6666666666666666
-# │ └─a => 1
-# │   ├─l => 0.25
-# │   │ └─m => 1
-# │   └─r => 0.75
-# │     ├─k => 0.3333333333333333
-# │     └─s => 0.3333333333333333
-# └─c => 0.3333333333333333
-#   └─e => 1
-#     ├─l => 0.5
-#     │ └─l => 1
-#     └─r => 0.5
-#       └─t => 1
 ```
 
 ------
@@ -75,9 +43,6 @@ objects. For example:
 
 ```perl6
 say TrieCreateBySplit(<core cort>).gist;
-```
-```
-# {TRIEROOT => {TRIEVALUE => 2, c => {TRIEVALUE => 2, o => {TRIEVALUE => 2, r => {TRIEVALUE => 2, e => {TRIEVALUE => 1}, t => {TRIEVALUE => 1}}}}}}
 ```
 
 On such representation are based the Trie functionalities implementations of the Mathematica package [AAp2].

@@ -1,0 +1,29 @@
+{
+  "name": "ML::HashTriesWithFrequencies",
+  "description": "Package with functions for creation and manipulation of Hash-based tries (prefix trees) with frequencies.",
+  "version": "0.1.0",
+  "perl": "6.d",
+  "authors": [
+    "Anton Antonov"
+  ],
+  "auth": "github:antononcube",
+  "depends": [],
+  "build-depends": [],
+  "test-depends": [],
+  "provides": {
+    "ML::HashTriesWithFrequencies": "lib/ML/HashTriesWithFrequencies.rakumod"
+  },
+  "resources": [],
+  "license": "Artistic-2.0",
+  "tags": [
+    "data mining",
+    "prefix tree",
+    "prefix trees",
+    "sequence mining",
+    "trie",
+    "tries",
+    "tries with frequencies"
+  ],
+  "api": "1",
+  "source-url": "https://github.com/antononcube/Raku-ML-HashTriesWithFrequencies.git"
+}
