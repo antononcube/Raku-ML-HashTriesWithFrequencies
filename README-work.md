@@ -5,14 +5,13 @@ This Raku package has functions for creation and manipulation of
 [Tries (Prefix trees)](https://en.wikipedia.org/wiki/Trie) 
 with frequencies.
 
-The package should be seen as Machine Learning (ML) functionalities, 
-not "just" a Trie data structure ones.
+The package provides Machine Learning (ML) functionalities, not "just" a Trie data structure.
 
-This Raku implementation closely follows the Java implementation [AAp3].
+This Raku implementation closely follows the Mathematica implementation [AAp2].
 
-The system of function names follows the one used in the Mathematica package [AAp2].
-
-**Remark:** Below Mathematica and Wolfram Language (WL) are used as synonyms.
+**Remark:** There is a Raku package with an alternative implementation, [AAp6],
+which is the *primary* Tries-with-frequencies package.
+The package in this repository, `ML::HashTriesWithFrequencies`, is made mostly for comparison studies.
 
 ------
 
@@ -53,7 +52,7 @@ On such representation are based the Trie functionalities implementations of the
 
 This package is a Raku re-implementation of the Mathematica Trie package [AAp2].
 
-The current Raku implementation is:
+The current implementation is:
 - ≈ 4 times slower than the Mathematica implementation [AAp2]
 - ≈ 70 times slower than the Java implementation [AAp3]
 - ≈ 1.8 times slower than the Raku implementation [AAp6]
